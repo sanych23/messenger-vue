@@ -39,7 +39,82 @@ let data = ref({
           time: '10:04',
           message: 'Uh, hes from space, he came here to steal a necklace from a wizard.',
           owner: 'Tony Stark'
-        }
+        },
+        {
+          time: '10:00',
+          message: 'Hey man! Whats up, Mr. Stark?',
+          owner: null,
+        },
+        {
+          time: '10:01',
+          message: 'Kid whered you come from?',
+          owner: "Tony Stark"
+        },
+        {
+          time: '10:02',
+          message: 'Field trip',
+          owner: null
+        },
+        {
+          time: '10:03',
+          message: 'Uh, What is this guys problem, Mr.Stark?',
+          owner: null
+        },
+        {
+          time: '10:04',
+          message: 'Uh, hes from space, he came here to steal a necklace from a wizard.',
+          owner: 'Tony Stark'
+        },
+        {
+          time: '10:00',
+          message: 'Hey man! Whats up, Mr. Stark?',
+          owner: null,
+        },
+        {
+          time: '10:01',
+          message: 'Kid whered you come from?',
+          owner: "Tony Stark"
+        },
+        {
+          time: '10:02',
+          message: 'Field trip',
+          owner: null
+        },
+        {
+          time: '10:03',
+          message: 'Uh, What is this guys problem, Mr.Stark?',
+          owner: null
+        },
+        {
+          time: '10:04',
+          message: 'Uh, hes from space, he came here to steal a necklace from a wizard.',
+          owner: 'Tony Stark'
+        },
+        {
+          time: '10:00',
+          message: 'Hey man! Whats up, Mr. Stark?',
+          owner: null,
+        },
+        {
+          time: '10:01',
+          message: 'Kid whered you come from?',
+          owner: "Tony Stark"
+        },
+        {
+          time: '10:02',
+          message: 'Field trip',
+          owner: null
+        },
+        {
+          time: '10:03',
+          message: 'Uh, What is this guys problem, Mr.Stark?',
+          owner: null
+        },
+        {
+          time: '10:04',
+          message: 'Uh, hes from space, he came here to steal a necklace from a wizard.',
+          owner: 'Tony Stark'
+        },
       ]
     },
     {

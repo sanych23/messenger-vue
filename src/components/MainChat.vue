@@ -3,9 +3,24 @@ import Message from './Message.vue';
 import SandwichPanel from '../UI/SandwichPanel.vue';
 import Typing from './Typing.vue';
 import throttle from 'lodash.throttle';
-import { ref } from 'vue';
+import { onUpdated, ref } from 'vue';
 
 const props = defineProps(["chat_data", "callback"]);
+const messages = ref(props.chat_data);
+
+function scrollToBottom() {
+    if(chat){
+        chat.scrollTop = chat.scrollHeight;
+    }
+};
+
+
+// watchEffect(() => {
+//     setTimeout(() => {
+        
+//     }, 100);
+// });
+
 let typingStatus = ref(false);
 
 const throttledMethod = throttle(() => {
@@ -21,7 +36,13 @@ function addMsg(evt){
         });
         evt.target.value = "";
     }
+    scrollToBottom();
 }
+
+onUpdated(() => {
+   scrollToBottom(); 
+   console.log("must be scrolled");
+});
 
 </script>
 <template>
@@ -49,7 +70,7 @@ function addMsg(evt){
             @click="props.callback"
         />
     </div>
-    <div class="messages" id="chat">
+    <div class="messages" id="chat" ref="chat">
         <div class="time">
             Today at 11:41
         </div>
