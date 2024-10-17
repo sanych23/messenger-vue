@@ -15,12 +15,6 @@ function scrollToBottom() {
 };
 
 
-// watchEffect(() => {
-//     setTimeout(() => {
-        
-//     }, 100);
-// });
-
 let typingStatus = ref(false);
 
 const throttledMethod = throttle(() => {
